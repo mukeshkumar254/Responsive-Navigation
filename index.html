@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+<link href="css/Style.css" rel="stylesheet">
+<title>Responsive Navbar</title>
+</head>
+<body>
+
+<!--sidebar-->
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">           
+            <div class="logo-name">
+                <i class='bx bxl-aws'></i>
+                <p>AWS Logo</p>
+            </div>
+            <i class='bx bx-menu' id="menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li><i class='bx bx-search'></i><input type="text" placeholder="search"/></li>
+            <li><a href="#"><i class='bx bx-grid-alt' ></i> <span class="linkname">Dashboard</span></a><span class="tooltip">Dashboard</span></li>
+            <li><a href="#"><i class='bx bx-user'></i> <span class="linkname">User</span></a><span class="tooltip">User</span></li>
+            <li><a href="#"><i class='bx bx-chat' ></i> <span class="linkname">Messages</span></a><span class="tooltip">Messages</span></li>
+            <li><a href="#"><i class='bx bxs-pie-chart-alt' ></i> <span class="linkname">Analytics</span></a><span class="tooltip">Analytics</span></li>
+            <li><a href="#"><i class='bx bx-folder-open' ></i> <span class="linkname">File Manager</span></a><span class="tooltip">File Manager</span></li> 
+            <li><a href="#"><i class='bx bx-cart' ></i><span class="linkname">Order</span></a><span class="tooltip">Order</span></li> 
+            <li><a href="#"><i class='bx bx-cog'></i><span class="linkname">Setting</span></a><span class="tooltip">Setting</span></li> 
+        </ul>
+    </div>
+</div>
+<!--sidebar-->
+
+
+
+
+
+
+<script>
+    
+    var btn = document.querySelector('#menu');
+    var sidebar = document.querySelector('.sidebar');
+    var searchbtn = document.querySelector('.bx-search');
+    
+    
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+    
+    searchbtn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+    
+    
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
